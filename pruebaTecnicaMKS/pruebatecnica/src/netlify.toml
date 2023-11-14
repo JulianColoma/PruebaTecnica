@@ -1,0 +1,3 @@
+[build]
+command = "yarn build"
+publish = "/opt/build/repo/src/index.tsx"
