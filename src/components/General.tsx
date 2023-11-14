@@ -364,6 +364,7 @@ const fetchProducts =async (): Promise<Product[]> => {
     const prodsData = data.products;
     prodsData.map((prod: Product) =>{
       prod.quantity = 0
+      return 0;
     })
     return prodsData;
   }
@@ -440,6 +441,7 @@ const General: React.FC = () => {
   
     return <>
 {isLoading && <Wrapper>Carregando</Wrapper>}
+{isError && <Wrapper>Houve um erro</Wrapper>}
 <Wrapper>
 <Navbar>
     <div>
