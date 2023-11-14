@@ -448,7 +448,7 @@ const General: React.FC = () => {
         <Title>MKS</Title>
         <Text>Sistemas</Text>
     </div>
-    <Button onClick={toggleCarrito}><img src="./Vector.svg" />{carrito.length}</Button>
+    <Button onClick={toggleCarrito}><img src="./Vector.svg"  alt="carrito"/>{carrito.length}</Button>
 </Navbar>
 
 <Grilla>
@@ -462,7 +462,7 @@ const General: React.FC = () => {
                  </Price>
                 </Proddata>
                 <Text2>{product.description}</Text2>
-                <Button2 onClick={(event) => comprarProd(event)} data-product={JSON.stringify(product)}><img src="./shopping-bag.svg"/><h3>COMPRAR</h3></Button2>
+                <Button2 onClick={(event) => comprarProd(event)} data-product={JSON.stringify(product)}><img src="./shopping-bag.svg" alt="shopping-bag"/><h3>COMPRAR</h3></Button2>
                
             </Prodcard>))}
 </Grilla>
